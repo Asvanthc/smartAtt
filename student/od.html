@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student menu</title>
+    <!-- CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    
+    <script src="https://kit.fontawesome.com/b8c6c27289.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Merienda+One&family=Permanent+Marker&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+
+    <!-- fonts -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Yesteryear&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/2312f8d79b.js"></script><script src="https://use.fontawesome.com/2312f8d79b.js"></script>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Font-->
+    <link rel="stylesheet" type="text/css" href="../css/lora-font.css">
+    <link rel="stylesheet" type="text/css" href="../css/raleway-font.css">
+    <link rel="stylesheet" type="text/css" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+    <!-- datepicker -->
+    <link rel="stylesheet" type="text/css" href="../css/jquery-ui.min.css">
+    <!-- Main Style Css -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    
+    <style>body {
+        background-color: #f1f1f1;
+        font-family: 'Lato', sans-serif;
+    }</style>
+
+</head>
+
+<body class="form-v3" style="background: #EFEFBB;">
+
+    
+    <!-- navbar -->
+    <div id="navbox">
+        <br>
+        <nav class="navbar navbar-expand-lg navbar-light "><br>
+            <h2>
+                <a href="../index.html" style="text-decoration: none; color:royalblue"><img style="margin-top: -30x;margin-left: 30px;" src="../images/hom.png" height="70px"></a>
+
+            </h2>
+            <span style="margin-top:-5px;font-size: 33px;font-weight: bold; color:royalblue;">SMART ATTENDANCE PORTAL</span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                    <li class="nav-item" style="align-items: right;">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mailto:asvanthc@gmail.com">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Logout</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                </form>
+            </div>
+        </nav>
+        <br>
+    </div>
+
+
+    <div class="page-content">
+        <div class="form-v3-content">
+            <form class="form-detail" action="leave.php" method="post" id="myform" enctype="multipart/form-data">
+                <h2>Leave Form</h2>
+                <div class="form-group">
+                    <div class="form-row form-row-13">
+                        <label for="full-name">REASON::</label>
+                        <input type="text" name="full-name" id="full-name" class="input-text" required>
+                    </div>
+
+
+                </div>
+                <div class="form-group form-group-1">
+                    <div class="form-row form-row-4">
+                        <label for="ticket">SLOT:</label>
+                        <select name="position1" id="ticket" class="input-text">
+						    <option value="Full Day">Full Day</option>
+						    <option value="Slot1">1</option>
+							<option value="Slot2">2</option>
+							<option value="Slot3">3</option>
+							<option value="Slot4">4</option>
+						</select>
+                        <span class="select-btn">
+						  	<i class="zmdi zmdi-chevron-down"></i>
+						</span>
+                    </div>
+                    <div class="form-row form-row-3">
+                        <label for="date">DATE:</label>
+                        <input type="text" name="date" class="date" id="date" placeholder="8/9/2018">
+                    </div>
+                    <div class="form-row form-row-4">
+                        <label for="ticket">LEAVE TYPE:</label>
+                        <select name="position" id="ticket" class="input-text">
+						    <option value="Medical">Medical</option>
+						    <option value="od">OD</option>
+						</select>
+                        <span class="select-btn">
+						  	<i class="zmdi zmdi-chevron-down"></i>
+						</span>
+                    </div>
+                </div>
+
+                <div class="form-group form-group-1">
+
+                    <div class="form-row form-row-1">
+
+                        <label for="date"></label>
+                        <label for="date"></label>
+                        <label for="date">UPLOAD PROOF:</label>
+                    </div>
+
+                    <input type="file" name="file" id="file" class="input-file">
+
+
+                </div>
+
+
+
+                <div class="form-row-last">
+                    <input type="submit" name="register" class="register" value="REQUEST">
+                </div>
+            </form>
+            <div class="form-right">
+                <div class="form-images-1">
+                    <img width="360px" height="460px" src="../images/form-v3-1.jpg" alt="form-v3-1">
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript">
+        $("#date").datepicker({
+            dateFormat: "MM - DD - yy",
+            showOn: "both",
+            buttonText: '<i class="zmdi zmdi-calendar-alt"></i>',
+        });
+    </script>
+</body>
+<!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
